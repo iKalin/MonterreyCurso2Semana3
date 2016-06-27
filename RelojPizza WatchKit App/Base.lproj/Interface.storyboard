@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
+    </dependencies>
+    <scenes>
+        <!--Haz tu Pizza-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="main" title="Haz tu Pizza" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="RelojPizza_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="Tamaño" id="Kc2-VL-OtE">
+                            <connections>
+                                <action selector="onTamaño" destination="AgC-eL-Hgc" id="d8U-99-SWY"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Tipo de Masa" id="7QI-53-fxf">
+                            <connections>
+                                <action selector="onMasa" destination="AgC-eL-Hgc" id="9sw-Em-Ttm"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Tipo de  Queso" id="i8R-4q-SYp">
+                            <connections>
+                                <action selector="onTipoDeQueso" destination="AgC-eL-Hgc" id="xPQ-cR-Htw"/>
+                            </connections>
+                        </button>
+                        <group width="136" alignment="left" id="AGg-ev-3xU">
+                            <items>
+                                <label width="18" height="37.5" alignment="left" hidden="YES" text="😨" id="4Tl-rb-4fI">
+                                    <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                </label>
+                                <button width="1" alignment="left" title="Ingredientes" id="tcx-G8-z4Z">
+                                    <connections>
+                                        <action selector="onIngredientes" destination="AgC-eL-Hgc" id="V5x-j7-KiQ"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Revisar y Confirmar" id="rnJ-8Z-bZl">
+                            <connections>
+                                <action selector="onConfirmar" destination="AgC-eL-Hgc" id="wgj-Ef-cO9"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="confirmarLabel" destination="rnJ-8Z-bZl" id="gnC-gp-LIi"/>
+                        <outlet property="hereLabel" destination="4Tl-rb-4fI" id="5ET-R7-4bh"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="183" y="243.5"/>
+        </scene>
+        <!--<Atras-->
+        <scene sceneID="OQE-bT-5iE">
+            <objects>
+                <controller identifier="tamaño" title="&lt;Atras" id="Hrh-so-c7T" customClass="TamañoInterfaceController" customModule="RelojPizza_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Chica" id="MPX-5J-82r">
+                            <connections>
+                                <action selector="onChica" destination="Hrh-so-c7T" id="mZL-Y8-kFZ"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Mediana" id="eeB-1N-3lM">
+                            <connections>
+                                <action selector="onMediana" destination="Hrh-so-c7T" id="w4O-gV-2Ea"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Grande" id="GgO-ia-SFz">
+                            <connections>
+                                <action selector="onGrande" destination="Hrh-so-c7T" id="qdG-9W-q4C"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="chicaBoton" destination="MPX-5J-82r" id="h2X-G2-w0X"/>
+                        <outlet property="grandeBoton" destination="GgO-ia-SFz" id="75w-ZA-Rde"/>
+                        <outlet property="medianaBoton" destination="eeB-1N-3lM" id="K7R-EB-mF9"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="383" y="165"/>
+        </scene>
+        <!--<Atras-->
+        <scene sceneID="Kvb-WB-PG7">
+            <objects>
+                <controller identifier="masa" title="&lt;Atras" id="iir-xD-GnW" customClass="MasaInterfaceController" customModule="RelojPizza_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Delgada" id="6cy-kI-aji">
+                            <connections>
+                                <action selector="onDelgada" destination="iir-xD-GnW" id="ExA-Qe-O1m"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Crujiente" id="fWh-29-fW0">
+                            <connections>
+                                <action selector="onCrujiente" destination="iir-xD-GnW" id="y5c-AY-JQ3"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Gruesa" id="Eg8-gL-fBS">
+                            <connections>
+                                <action selector="onGruesa" destination="iir-xD-GnW" id="uf5-hw-lMx"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="crujienteBoton" destination="fWh-29-fW0" id="7R4-pw-QQU"/>
+                        <outlet property="delgadaBoton" destination="6cy-kI-aji" id="M2y-mM-NeO"/>
+                        <outlet property="gruesaBoton" destination="Eg8-gL-fBS" id="Zy8-XL-jen"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="586" y="206"/>
+        </scene>
+        <!--<Atras-->
+        <scene sceneID="EUl-Pg-8Gj">
+            <objects>
+                <controller identifier="queso" title="&lt;Atras" id="FBs-ns-hG8" customClass="QuesoInterfaceController" customModule="RelojPizza_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Mozarela" id="crE-nH-XuJ">
+                            <connections>
+                                <action selector="onMozarela" destination="FBs-ns-hG8" id="4a7-Zy-Ya7"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Cheddar" id="TNC-tw-vv9">
+                            <connections>
+                                <action selector="onCheddar" destination="FBs-ns-hG8" id="1FN-B6-480"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Parmesano" id="ShW-MZ-b14">
+                            <connections>
+                                <action selector="onParmesano" destination="FBs-ns-hG8" id="fPf-gz-poy"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Sin queso" id="QhJ-l3-xPR">
+                            <connections>
+                                <action selector="onSinQueso" destination="FBs-ns-hG8" id="hZZ-Bb-XAd"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="cheddarBoton" destination="TNC-tw-vv9" id="aLh-Sa-cpt"/>
+                        <outlet property="mozarelaBoton" destination="crE-nH-XuJ" id="Ia1-N0-o3h"/>
+                        <outlet property="parmesanoBoton" destination="ShW-MZ-b14" id="kGR-l3-FV2"/>
+                        <outlet property="sinquesoBoton" destination="QhJ-l3-xPR" id="p8p-V7-bPg"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="789" y="206"/>
+        </scene>
+        <!--<Atras-->
+        <scene sceneID="Jp7-hm-pJy">
+            <objects>
+                <controller identifier="ingredientes" title="&lt;Atras" id="V75-uL-vxD" customClass="IngredientesInterfaceController" customModule="RelojPizza_WatchKit_Extension">
+                    <items>
+                        <switch width="1" alignment="left" value="YES" title="Jamon" id="rBI-2X-zKH">
+                            <connections>
+                                <action selector="onJamon:" destination="V75-uL-vxD" id="Al7-Pb-yFJ"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Peperoni" id="7DJ-IJ-Lq0">
+                            <connections>
+                                <action selector="onPeperoni:" destination="V75-uL-vxD" id="ILo-zE-cSA"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Pavo" id="whg-Gp-xmg">
+                            <connections>
+                                <action selector="onPavo:" destination="V75-uL-vxD" id="Q3o-8W-fRS"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Salchicha" id="RxC-XR-nYp">
+                            <connections>
+                                <action selector="onSalchicha:" destination="V75-uL-vxD" id="aDB-tT-XaP"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Aceituna" id="qkG-dC-iSO">
+                            <connections>
+                                <action selector="onAceituna:" destination="V75-uL-vxD" id="pw1-Fv-YG1"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Pimiento" id="jVw-rw-QgG">
+                            <connections>
+                                <action selector="onPimiento:" destination="V75-uL-vxD" id="owg-yd-XlJ"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Piña" id="DGi-SK-TPg">
+                            <connections>
+                                <action selector="onPiña:" destination="V75-uL-vxD" id="CKV-tD-LDn"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Anchoa" id="kNH-z2-fyL">
+                            <connections>
+                                <action selector="onAnchoa:" destination="V75-uL-vxD" id="Wee-I8-Oym"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Cebolla" id="k6D-Mw-B2N">
+                            <connections>
+                                <action selector="onCebolla:" destination="V75-uL-vxD" id="lhA-Ja-D5i"/>
+                            </connections>
+                        </switch>
+                    </items>
+                    <connections>
+                        <outlet property="aceitunaSwitch" destination="qkG-dC-iSO" id="T82-Xo-crX"/>
+                        <outlet property="anchoaSwitch" destination="kNH-z2-fyL" id="BDr-wu-1aD"/>
+                        <outlet property="cebollaSwitch" destination="k6D-Mw-B2N" id="7eK-VL-Gqu"/>
+                        <outlet property="jamonSwitch" destination="rBI-2X-zKH" id="dI8-x0-9xI"/>
+                        <outlet property="pavoSwitch" destination="whg-Gp-xmg" id="lw3-1e-bRr"/>
+                        <outlet property="peperoniSwitch" destination="7DJ-IJ-Lq0" id="rXh-sI-H4i"/>
+                        <outlet property="pimientoSwitch" destination="jVw-rw-QgG" id="dfz-jE-PWk"/>
+                        <outlet property="piñaSwitch" destination="DGi-SK-TPg" id="UeT-70-BL8"/>
+                        <outlet property="salchichaSwitch" destination="RxC-XR-nYp" id="hCV-vn-mZC"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="998" y="206"/>
+        </scene>
+        <!--<Atras-->
+        <scene sceneID="gfH-RN-Az1">
+            <objects>
+                <controller identifier="confirmar" title="&lt;Atras" id="44F-QC-WoI" customClass="ConfirmarInterfaceController" customModule="RelojPizza_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" spacing="32" id="F2D-4M-HGR">
+                            <items>
+                                <button width="1" height="67.5" alignment="left" title="Revisar la Orden" id="Ahl-V4-VgT">
+                                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="0.31387246619999998" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="15"/>
+                                    <connections>
+                                        <action selector="onRevisar" destination="44F-QC-WoI" id="Vg0-Bk-PT5"/>
+                                    </connections>
+                                </button>
+                                <button width="1" height="46.5" alignment="left" title="Confirmar Orden" id="0f8-Q5-5So">
+                                    <color key="backgroundColor" red="1" green="0.1802339593" blue="0.2502586282" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="onConfirmar" destination="44F-QC-WoI" id="XGC-tD-mOM"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1200" y="206"/>
+        </scene>
+        <!--<Atras-->
+        <scene sceneID="pKf-te-XF9">
+            <objects>
+                <controller identifier="tuorden" title="&lt;Atras" id="y8j-up-UuJ" customClass="TuordenInterfaceController" customModule="RelojPizza_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Label1" id="dkW-Ak-DR4"/>
+                        <label alignment="left" text="Label2" id="6Kw-ZM-l6c"/>
+                        <label alignment="left" text="Label3" id="1R3-gh-9bP"/>
+                        <label alignment="left" text="Label4" textAlignment="left" numberOfLines="7" id="JdL-ZA-C47"/>
+                    </items>
+                    <connections>
+                        <outlet property="firstLabel" destination="dkW-Ak-DR4" id="28J-gD-YTs"/>
+                        <outlet property="fourthLabel" destination="JdL-ZA-C47" id="dgH-NA-Gmo"/>
+                        <outlet property="secondLabel" destination="6Kw-ZM-l6c" id="RFd-kD-hEV"/>
+                        <outlet property="thirdLabel" destination="1R3-gh-9bP" id="KBe-zJ-mUp"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1423" y="161"/>
+        </scene>
+        <!--cocinar-->
+        <scene sceneID="hbA-1q-XL2">
+            <objects>
+                <controller identifier="cocinar" id="V5P-Oi-AOl" customClass="CocinarInterfaceController" customModule="RelojPizza_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Lista en 10 mins" id="DbF-DK-qEp"/>
+                        <button width="1" alignment="left" title="Otra Orden" id="PTr-oX-8Z8">
+                            <connections>
+                                <action selector="onOtraOrden" destination="V5P-Oi-AOl" id="lqh-eS-E8L"/>
+                            </connections>
+                        </button>
+                        <imageView width="136" height="74" alignment="left" image="fuegoPizzaAPP" contentMode="redraw" animationDuration="1" id="C4c-Ap-KgI"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1437" y="498"/>
+        </scene>
+    </scenes>
+</document>
