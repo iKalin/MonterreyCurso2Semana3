@@ -51,10 +51,10 @@
             </objects>
             <point key="canvasLocation" x="183" y="243.5"/>
         </scene>
-        <!--<Atras-->
+        <!--Atras-->
         <scene sceneID="OQE-bT-5iE">
             <objects>
-                <controller identifier="tamaño" title="&lt;Atras" id="Hrh-so-c7T" customClass="TamañoInterfaceController" customModule="RelojPizza_WatchKit_Extension">
+                <controller identifier="tamaño" title="Atras" id="Hrh-so-c7T" customClass="TamañoInterfaceController" customModule="RelojPizza_WatchKit_Extension">
                     <items>
                         <button width="1" alignment="left" title="Chica" id="MPX-5J-82r">
                             <connections>
@@ -81,10 +81,10 @@
             </objects>
             <point key="canvasLocation" x="383" y="165"/>
         </scene>
-        <!--<Atras-->
+        <!--Atras-->
         <scene sceneID="Kvb-WB-PG7">
             <objects>
-                <controller identifier="masa" title="&lt;Atras" id="iir-xD-GnW" customClass="MasaInterfaceController" customModule="RelojPizza_WatchKit_Extension">
+                <controller identifier="masa" title="Atras" id="iir-xD-GnW" customClass="MasaInterfaceController" customModule="RelojPizza_WatchKit_Extension">
                     <items>
                         <button width="1" alignment="left" title="Delgada" id="6cy-kI-aji">
                             <connections>
@@ -111,10 +111,10 @@
             </objects>
             <point key="canvasLocation" x="586" y="206"/>
         </scene>
-        <!--<Atras-->
+        <!--Atras-->
         <scene sceneID="EUl-Pg-8Gj">
             <objects>
-                <controller identifier="queso" title="&lt;Atras" id="FBs-ns-hG8" customClass="QuesoInterfaceController" customModule="RelojPizza_WatchKit_Extension">
+                <controller identifier="queso" title="Atras" id="FBs-ns-hG8" customClass="QuesoInterfaceController" customModule="RelojPizza_WatchKit_Extension">
                     <items>
                         <button width="1" alignment="left" title="Mozarela" id="crE-nH-XuJ">
                             <connections>
@@ -147,10 +147,10 @@
             </objects>
             <point key="canvasLocation" x="789" y="206"/>
         </scene>
-        <!--<Atras-->
+        <!--Atras-->
         <scene sceneID="Jp7-hm-pJy">
             <objects>
-                <controller identifier="ingredientes" title="&lt;Atras" id="V75-uL-vxD" customClass="IngredientesInterfaceController" customModule="RelojPizza_WatchKit_Extension">
+                <controller identifier="ingredientes" title="Atras" id="V75-uL-vxD" customClass="IngredientesInterfaceController" customModule="RelojPizza_WatchKit_Extension">
                     <items>
                         <switch width="1" alignment="left" value="YES" title="Jamon" id="rBI-2X-zKH">
                             <connections>
@@ -213,10 +213,10 @@
             </objects>
             <point key="canvasLocation" x="998" y="206"/>
         </scene>
-        <!--<Atras-->
+        <!--Atras-->
         <scene sceneID="gfH-RN-Az1">
             <objects>
-                <controller identifier="confirmar" title="&lt;Atras" id="44F-QC-WoI" customClass="ConfirmarInterfaceController" customModule="RelojPizza_WatchKit_Extension">
+                <controller identifier="confirmar" title="Atras" id="44F-QC-WoI" customClass="ConfirmarInterfaceController" customModule="RelojPizza_WatchKit_Extension">
                     <items>
                         <group width="1" alignment="left" layout="vertical" spacing="32" id="F2D-4M-HGR">
                             <items>
@@ -240,10 +240,10 @@
             </objects>
             <point key="canvasLocation" x="1200" y="206"/>
         </scene>
-        <!--<Atras-->
+        <!--Atras-->
         <scene sceneID="pKf-te-XF9">
             <objects>
-                <controller identifier="tuorden" title="&lt;Atras" id="y8j-up-UuJ" customClass="TuordenInterfaceController" customModule="RelojPizza_WatchKit_Extension">
+                <controller identifier="tuorden" title="Atras" id="y8j-up-UuJ" customClass="TuordenInterfaceController" customModule="RelojPizza_WatchKit_Extension">
                     <items>
                         <label alignment="left" text="Label1" id="dkW-Ak-DR4"/>
                         <label alignment="left" text="Label2" id="6Kw-ZM-l6c"/>
